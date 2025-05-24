@@ -1,3 +1,12 @@
+
+ xgboost import XGBClassifier
+
+xgb = XGBClassifier(objective = 'binary:logistic', learning_rate = 0.5, max_depth = 5, n_estimators = 180)
+
+xgb.fit(X_train, y_train)
+
+y_pred = xgb.predict(X_test)
+
 # Breast prediction page
 if (selected == "Breast Diseases"):
 
