@@ -1,9 +1,6 @@
-# 📦 Streamlit App Starter Kit 
-```
-⬆️ (Replace above with your app's name)
-```
+# 📦 Stroke Prediction App 
 
-Description of the app ...
+An app desined to make real world prediction of stroke outcomes in real world settings
 
 ## Demo App
 
