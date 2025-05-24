@@ -1,8 +1,8 @@
 import streamlit as st 
-import pandas as pd 
-import numpy as np 
-df = pd.DataFrame( 
-np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4], 
-columns=["lat", "lon"], 
-) 
-st.map(df)
+left, middle, right = st.columns(3) 
+if left.button("Plain button", use_container_width=True): 
+left.markdown("You clicked the plain button.") 
+if middle.button("Emoji button", icon="     ", use_container_width=True): 
+middle.markdown("You clicked the emoji button.") 
+if right.button("Material button", icon=":material/mood:", use_container_width=True): 
+right.markdown("You clicked the Material button.")
