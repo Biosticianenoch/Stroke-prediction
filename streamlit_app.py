@@ -1,4 +1,7 @@
-
+import pandas as pd
+import numpy as np
+df = pd.read_csv('https://github.com/Biosticianenoch/data/blob/main/breast%20cancer.csv')
+df
  xgboost import XGBClassifier
 
 xgb = XGBClassifier(objective = 'binary:logistic', learning_rate = 0.5, max_depth = 5, n_estimators = 180)
